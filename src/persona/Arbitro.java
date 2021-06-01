@@ -14,14 +14,14 @@ public class Arbitro extends Persona{;
 				boolean frenar, boolean foul, boolean penal, boolean offside, boolean tarjetaAmarilla,
 				boolean tarjetaRoja, boolean var, boolean iniciarPartido, boolean terminarPartido) {
 			super(nombre, apellido, documento, caminar, correr, frenar);
-			this.foul = foul;
-			this.penal = penal;
-			this.offside = offside;
-			this.tarjetaAmarilla = tarjetaAmarilla;
-			this.tarjetaRoja = tarjetaRoja;
-			this.var = var;
-			this.iniciarPartido = iniciarPartido;
-			this.terminarPartido = terminarPartido;
+			this.setFoul(foul);
+			this.setPenal(penal);
+			this.setOffside(offside);
+			this.setTarjetaAmarilla(tarjetaAmarilla);
+			this.setTarjetaRoja(tarjetaRoja);
+			this.setVar(var);
+			this.setIniciarPartido(iniciarPartido);
+			this.setTerminarPartido(terminarPartido);
 		}
 
 		public boolean isFoul() {

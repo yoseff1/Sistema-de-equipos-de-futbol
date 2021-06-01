@@ -11,16 +11,16 @@ public class Jugador extends Persona {
 	public Jugador(String nombre, String apellido, String documento, boolean caminar, boolean correr, boolean frenar,
 			String club, String dorsal, String posicion, boolean pasar, boolean eludir, boolean patear) {
 		super(nombre, apellido, documento, caminar, correr, frenar);
-		this.club = club;
-		this.dorsal = dorsal;
-		this.posicion = posicion;
-		this.pasar = pasar;
-		this.eludir = eludir;
-		this.patear = patear;
+		this.setClub(club);
+		this.setDorsal(dorsal);
+		this.setPosicion(posicion);
+		this.setPasar(pasar);
+		this.setEludir(eludir);
+		this.setPatear(patear);
 	}
 
 	public String getClub() {
-		return "DNI " + club;
+		return club;
 	}
 
 	public void setClub(String club) {

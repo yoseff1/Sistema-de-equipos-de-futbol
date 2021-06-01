@@ -10,11 +10,11 @@ public class Ctecnico extends Persona{
 	public Ctecnico(String nombre, String apellido, String documento, boolean caminar, boolean correr, boolean frenar,
 			String club, String posicion, String traerAgua, String traerPelota, boolean masajear) {
 		super(nombre, apellido, documento, caminar, correr, frenar);
-		this.club = club;
-		this.posicion = posicion;
-		this.traerAgua = traerAgua;
-		this.traerPelota = traerPelota;
-		this.masajear = masajear;
+		this.setClub(club);
+		this.setPosicion(posicion);
+		this.setTraerAgua(traerAgua);
+		this.setTraerPelota(traerPelota);
+		this.setMasajear(masajear);
 	}
 
 	public String getClub() {

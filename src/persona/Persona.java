@@ -10,12 +10,12 @@ public class Persona {
 	
 	public Persona(String nombre, String apellido, String documento, boolean caminar, boolean correr, boolean frenar) {
 		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.documento = documento;
-		this.caminar = caminar;
-		this.correr = correr;
-		this.frenar = frenar;
+		this.setNombre(nombre);
+		this.setApellido(apellido);
+		this.setDocumento(documento);
+		this.setCaminar(caminar);
+		this.setCorrer(correr);
+		this.setFrenar(frenar);
 	}
 
 	public String getNombre() {
@@ -41,7 +41,7 @@ public class Persona {
 		this.apellido = apellido;
 	}
 	public String getDocumento() {
-		return documento;
+		return "DNI " + documento;
 	}
 
 	public void setDocumento(String documento) {

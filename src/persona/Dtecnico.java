@@ -9,10 +9,10 @@ public class Dtecnico extends Persona{
 	public Dtecnico(String nombre, String apellido, String documento, boolean caminar, boolean correr, boolean frenar,
 			String club, String ordenes, int cambios, boolean insultarArbitro) {
 		super(nombre, apellido, documento, caminar, correr, frenar);
-		this.club = club;
-		this.ordenes = ordenes;
-		this.cambios = cambios;
-		this.insultarArbitro = insultarArbitro;
+		this.setClub(club);
+		this.setOrdenes(ordenes);
+		this.setCambios(cambios);
+		this.setInsultarArbitro(insultarArbitro);
 	}
 	public String getClub() {
 		return club;
