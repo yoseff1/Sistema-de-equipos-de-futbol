@@ -20,7 +20,7 @@ public class Jugador extends Persona {
 	}
 
 	public String getClub() {
-		return club;
+		return "DNI " + club;
 	}
 
 	public void setClub(String club) {
@@ -42,6 +42,13 @@ public class Jugador extends Persona {
 	public void setPosicion(String posicion) {
 		this.posicion = posicion;
 	}
+	public void pase() {
+		if(pasar == true) {
+			System.out.println("el jugador pasa a su compañero");
+		}else {
+			System.out.println("el jugador se queda la pelota");
+		}
+		}
 
 	public boolean isPasar() {
 		return pasar;
@@ -54,7 +61,13 @@ public class Jugador extends Persona {
 	public boolean isEludir() {
 		return eludir;
 	}
-
+	public void evade() {
+		if(eludir == true) {
+			System.out.println("el jugador evade a su contrincante");
+		}else {
+			System.out.println("el jugador pierde el balon");
+		}
+	}
 	public void setEludir(boolean eludir) {
 		this.eludir = eludir;
 	}
@@ -62,7 +75,14 @@ public class Jugador extends Persona {
 	public boolean isPatear() {
 		return patear;
 	}
-
+	
+	public void disparo() {
+		if(patear == true) {
+			System.out.println("el jugador dispara al arco");
+		}else {
+			patear = true;
+		}
+	}
 	public void setPatear(boolean patear) {
 		this.patear = patear;
 	}

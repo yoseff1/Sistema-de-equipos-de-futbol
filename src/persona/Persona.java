@@ -25,7 +25,6 @@ public class Persona {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
 	public String getApellido() {
 		return apellido;
 	}
@@ -34,6 +33,13 @@ public class Persona {
 		this.apellido = apellido;
 	}
 
+	public String getNombreCompleto() {
+		return nombre + apellido;
+	}
+
+	public void setNombreCompleto(String nombre,String apellido) {
+		this.apellido = apellido;
+	}
 	public String getDocumento() {
 		return documento;
 	}
