@@ -48,7 +48,7 @@ public class Jugador extends Persona {
 		}else {
 			System.out.println("el jugador se queda la pelota");
 		}
-		}
+	}
 
 	public boolean isPasar() {
 		return pasar;

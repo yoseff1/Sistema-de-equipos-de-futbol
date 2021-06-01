@@ -19,6 +19,10 @@ public class Principal {
 		primerJugador.disparo();
 
 		Dtecnico primerDirector = new Dtecnico ("Jorge", "Mendez", "54674543", false, false, false, "Atletico Mineiro", null, 3, false);
-		System.out.println(primerDirector.getNombre() + primerDirector.getApellido());
+		System.out.println(primerDirector.getNombreCompleto());
+		System.out.println(primerDirector.getDocumento());
+		System.out.println(primerDirector.getClub());
+		primerDirector.cambio();
+		primerDirector.insulto();
 	}
 }

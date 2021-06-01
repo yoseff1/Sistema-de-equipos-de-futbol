@@ -31,6 +31,22 @@ public class Dtecnico extends Persona{
 	}
 	public void setCambios(int cambios) {
 		this.cambios = cambios;
+	}	
+	public void cambio() {
+			switch(cambios) {
+			default:
+				System.out.println("quedan 3 cambios");
+				break;
+			case 2:
+				System.out.println("quedan 2 cambios");
+				break;
+			case 1:
+				System.out.println("queda un cambio");
+				break;
+			case 0:
+				System.out.println("no quedan cambios");
+				break;
+			}
 	}
 	public boolean isInsultarArbitro() {
 		return insultarArbitro;
@@ -38,7 +54,11 @@ public class Dtecnico extends Persona{
 	public void setInsultarArbitro(boolean insultarArbitro) {
 		this.insultarArbitro = insultarArbitro;
 	}
-	
-	
-
+	public void insulto() {
+		if(insultarArbitro == true) {
+			System.out.println("el DT insulta al arbitro");
+		}else {
+			System.out.println("el DT se queda callado");
+		}
+	}
 }
